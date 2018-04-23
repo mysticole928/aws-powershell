@@ -10,3 +10,7 @@ aws ec2 stop-instances --instance-ids $INSTANCE_ID
 # Verify the status of the stop command:
 
 aws ec2 describe-instance-status --instance-ids $INSTANCE_ID
+
+# Start the same instance.
+
+aws ec2 start-instances --instance-ids $INSTANCE_ID
