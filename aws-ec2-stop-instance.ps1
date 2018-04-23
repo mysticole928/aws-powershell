@@ -14,3 +14,7 @@ aws ec2 describe-instance-status --instance-ids $INSTANCE_ID
 # Start the same instance.
 
 aws ec2 start-instances --instance-ids $INSTANCE_ID
+
+# Verify the status of the start-instances command.
+
+aws ec2 describe-instance-status --instance-id $INSTANCE_ID
