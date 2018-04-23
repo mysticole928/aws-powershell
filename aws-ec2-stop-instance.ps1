@@ -6,3 +6,7 @@ $INSTANCE_ID = $INSTANCE.Reservations.Instances.InstanceId
 $INSTANCE.Reservations.Instances.BlockDeviceMappings.Ebs.VolumeId
 
 aws ec2 stop-instances --instance-ids $INSTANCE_ID
+
+# Verify the status of the stop command:
+
+aws ec2 describe-instance-status --instance-ids $INSTANCE_ID
